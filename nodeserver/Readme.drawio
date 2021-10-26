@@ -1,0 +1,165 @@
+<mxfile host="65bd71144e">
+    <diagram id="TobQlCzvQm_TDIVmP8zJ" name="第 1 页">
+        <mxGraphModel dx="1577" dy="2144" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2" target="33" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2" target="42" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="run app.js" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="294" y="30.5" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="Horizontal Tree Layout" style="swimlane;startSize=20;horizontal=0;childLayout=treeLayout;horizontalTree=1;resizable=0;containerType=tree;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="-50" width="310" height="240" as="geometry">
+                        <mxRectangle x="460" y="-50" width="30" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="app.js" style="whiteSpace=wrap;html=1;" parent="32" vertex="1">
+                    <mxGeometry x="40" y="100" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="require express and creat an express app" style="whiteSpace=wrap;html=1;" parent="32" vertex="1">
+                    <mxGeometry x="190" y="20" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" parent="32" source="33" target="34" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="require router.js" style="whiteSpace=wrap;html=1;" parent="32" vertex="1">
+                    <mxGeometry x="190" y="100" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" parent="32" source="33" target="36" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" parent="32" source="33" target="41" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="590" y="29" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="&lt;div&gt;&lt;span&gt;allow cross-origin&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="32" vertex="1">
+                    <mxGeometry x="190" y="180" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="42" target="47" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="42" target="54">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="router.js" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="296" y="305" width="116" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="Horizontal Tree Layout" style="swimlane;startSize=20;horizontal=0;childLayout=treeLayout;horizontalTree=1;resizable=0;containerType=tree;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="240" width="310" height="180" as="geometry">
+                        <mxRectangle x="460" y="240" width="30" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" value="routers" style="whiteSpace=wrap;html=1;" parent="46" vertex="1">
+                    <mxGeometry x="40" y="70" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="const router = express.Router().&lt;br&gt;use express's Roter" style="whiteSpace=wrap;html=1;" parent="46" vertex="1">
+                    <mxGeometry x="190" y="20" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" parent="46" source="47" target="48" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="require service.js" style="whiteSpace=wrap;html=1;" parent="46" vertex="1">
+                    <mxGeometry x="190" y="120" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" parent="46" source="47" target="50" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="运行app.js过后，因为使用app.use(router),所以跳转到router.js执行" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="190" width="170" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="54" target="59">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="54" target="75">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="354" y="700" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="54">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="450" y="830" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="354" y="762"/>
+                            <mxPoint x="450" y="762"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" value="services.js" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="294" y="633" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="Horizontal Tree Layout" style="swimlane;startSize=20;horizontal=0;childLayout=treeLayout;horizontalTree=1;resizable=0;containerType=tree;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="470" width="880" height="342" as="geometry">
+                        <mxRectangle x="460" y="240" width="30" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="59" value="sevices.js" style="whiteSpace=wrap;html=1;" vertex="1" parent="58">
+                    <mxGeometry x="40" y="170.5" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="在router.js中根据访问地址的不同，执行命令不同" style="whiteSpace=wrap;html=1;" vertex="1" parent="58">
+                    <mxGeometry x="190" y="70" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" parent="58" source="59" target="60">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="require db.js在执行登录和注册函数的时候，连接数据库读取写入数据" style="whiteSpace=wrap;html=1;" vertex="1" parent="58">
+                    <mxGeometry x="190" y="241" width="100" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" parent="58" source="59" target="62">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="66" source="60" parent="58">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="600" y="397.50000000000006" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" value="&lt;div style=&quot;color: rgb(248 , 248 , 242) ; background-color: rgb(40 , 42 , 54) ; font-family: &amp;#34;cascadia mono&amp;#34; , &amp;#34;思源黑体 cn&amp;#34; , &amp;#34;dejavu sans mono&amp;#34; , &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px ; line-height: 20px&quot;&gt;&lt;span style=&quot;color: #bd93f9&quot;&gt;router&lt;/span&gt;.&lt;span style=&quot;color: #50fa7b&quot;&gt;post&lt;/span&gt;(&lt;span style=&quot;color: #e9f284&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color: #f1fa8c&quot;&gt;/api/login&lt;/span&gt;&lt;span style=&quot;color: #e9f284&quot;&gt;'&lt;/span&gt;,&amp;nbsp;services.login)，执行services中的login命令&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="58">
+                    <mxGeometry x="340" y="20" width="440" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="68" source="60" parent="58">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="750" y="357.50000000000006" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="68" value="&lt;div style=&quot;color: rgb(248 , 248 , 242) ; background-color: rgb(40 , 42 , 54) ; font-family: &amp;#34;cascadia mono&amp;#34; , &amp;#34;思源黑体 cn&amp;#34; , &amp;#34;dejavu sans mono&amp;#34; , &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px ; line-height: 20px&quot;&gt;&lt;span style=&quot;color: #bd93f9&quot;&gt;router&lt;/span&gt;.&lt;span style=&quot;color: #50fa7b&quot;&gt;post&lt;/span&gt;(&lt;span style=&quot;color: #e9f284&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color: #f1fa8c&quot;&gt;/api/register&lt;/span&gt;&lt;span style=&quot;color: #e9f284&quot;&gt;'&lt;/span&gt;,&amp;nbsp;services.register)，执行services中的register命令&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="58">
+                    <mxGeometry x="340" y="120" width="440" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="70" source="62" parent="58">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="600" y="660.5" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="70" value="require mysql模块" style="whiteSpace=wrap;html=1;" vertex="1" parent="58">
+                    <mxGeometry x="340" y="241" width="100" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="72" source="70" parent="58">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="750" y="735.5" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="72" value="暴露一个&lt;span style=&quot;color: rgb(80 , 250 , 123) ; background-color: rgb(40 , 42 , 54) ; font-family: &amp;#34;cascadia mono&amp;#34; , &amp;#34;思源黑体 cn&amp;#34; , &amp;#34;dejavu sans mono&amp;#34; , &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px&quot;&gt;base&lt;/span&gt;&lt;span style=&quot;background-color: rgb(40 , 42 , 54) ; font-family: &amp;#34;cascadia mono&amp;#34; , &amp;#34;思源黑体 cn&amp;#34; , &amp;#34;dejavu sans mono&amp;#34; , &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 15px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;方法&lt;br&gt;base方法中有&lt;br&gt;sql：sql语句&lt;br&gt;data：传入sql的数据&lt;br&gt;callback：回调函数&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="58">
+                    <mxGeometry x="490" y="230" width="220" height="92" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="74" source="72" parent="58">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="900" y="735.5" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="74" value="连接数据库" style="whiteSpace=wrap;html=1;" vertex="1" parent="58">
+                    <mxGeometry x="760" y="241" width="100" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="exports login&lt;br&gt;两个参数req和res&lt;br&gt;req为从浏览器处获得的参数&lt;br&gt;res为传入浏览器的参数" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="830" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="exports register&lt;br&gt;两个参数req和res&lt;br&gt;req为从浏览器处获得的参数&lt;br&gt;res为传入浏览器的参数" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="830" width="120" height="100" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
